@@ -41,26 +41,12 @@ const NavbarHeader = () => {
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          {/* <div className="flex-shrink-0">
-            <Link className="text-2xl font-bold" href="/">
-              <div className="flex gap-2 text-3xl text-[#636E88]">
-                <p>Doc</p>
-                <p>Ticket</p>
-              </div>
+
+          <div className="flex-shrink-0 relative w-24 h-24">
+            <Link href="/" className="text-2xl font-bold text-[#650934]">
+              <Image src={logo} alt="logo" fill className="object-contain" />
             </Link>
-          </div> */}
-
-<div className="flex-shrink-0 relative w-24 h-24">
-  <Link href="/" className="text-2xl font-bold text-[#650934]">
-    <Image
-      src={logo}
-      alt="tts_logo"
-      fill
-      className="object-contain"
-    />
-  </Link>
-</div>
-
+          </div>
 
           {/* Mobile Menu Icon */}
           <div className="md:hidden">
@@ -90,12 +76,12 @@ const NavbarHeader = () => {
           {/* Sign-Up and Log-In Buttons for Desktop */}
           <div className="hidden md:flex gap-4">
             <Link href="#">
-              <button className="flex items-center px-4 py-2 text-white bg-[#007E85] rounded-md transition duration-300 ease-in-out hover:bg-[#1b5458] hover:scale-105">
+              <button className="flex items-center px-4 py-1 text-white bg-[#007E85] rounded-md transition duration-300 ease-in-out hover:bg-[#1b5458] hover:scale-105">
                 Sign Up
               </button>
             </Link>
             <Link href="#">
-              <button className="flex items-center px-4 py-2 text-white bg-[#007E85] rounded-md transition duration-300 ease-in-out hover:bg-[#1b5458] hover:scale-105">
+              <button className="flex items-center px-4 py-1 text-white bg-[#007E85] rounded-md transition duration-300 ease-in-out hover:bg-[#1b5458] hover:scale-105">
                 Log In
               </button>
             </Link>
@@ -129,7 +115,7 @@ const NavbarHeader = () => {
             {/* Mobile Sign-Up and Log-In Buttons */}
             <Link href="#">
               <button
-                className="mt-4 px-6 py-3 text-lg text-white bg-[#007E85] rounded-md transition duration-300 ease-in-out hover:bg-[#1b5458] hover:scale-105"
+                className="mt-4 px-6 py-1 text-lg text-white bg-[#007E85] rounded-md transition duration-300 ease-in-out hover:bg-[#1b5458] hover:scale-105"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Sign Up
@@ -137,7 +123,7 @@ const NavbarHeader = () => {
             </Link>
             <Link href="#">
               <button
-                className="px-6 py-3 text-lg text-white bg-[#007E85] rounded-md transition duration-300 ease-in-out hover:bg-[#1b5458] hover:scale-105"
+                className="px-6 py-1 text-lg text-white bg-[#007E85] rounded-md transition duration-300 ease-in-out hover:bg-[#1b5458] hover:scale-105"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Log In

@@ -1,6 +1,13 @@
 import { Divider } from "@nextui-org/divider";
 import Link from "next/link";
-import { FaFacebook, FaInstagram, FaLinkedin, FaRegCopyright, FaTwitter, FaYoutube } from "react-icons/fa";
+import {
+  FaFacebook,
+  FaInstagram,
+  FaLinkedin,
+  FaRegCopyright,
+  FaTwitter,
+  FaYoutube,
+} from "react-icons/fa";
 
 import logo from "@/assets/logo/doc_logo.png";
 import Image from "next/image";
@@ -38,22 +45,20 @@ const Footer = () => {
   ];
 
   return (
-    <div className="mt-96 bg-[#007E85] text-white">
+    <div className=" bg-[#007E85] text-white">
       <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4 py-12 pl-8 md:py-12  md:pl-16">
         {/* col-1 */}
         <div className="w-full mx-auto flex flex-col items-start justify-center">
- 
-
-<div className="  relative w-24 h-24 border rounded-lg">
-  <Link href="/" className="text-2xl font-bold  ">
-    <Image
-      src={logo}
-      alt="tts_logo"
-      fill
-      className="object-contain"
-    />
-  </Link>
-</div>
+          <div className="  relative w-24 h-24 border rounded-lg">
+            <Link href="/" className="text-2xl font-bold  ">
+              <Image
+                src={logo}
+                alt="tts_logo"
+                fill
+                className="object-contain"
+              />
+            </Link>
+          </div>
 
           <div className="pt-4">
             <p className="text-xl">Doc Ticket</p>

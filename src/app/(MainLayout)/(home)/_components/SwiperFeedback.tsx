@@ -63,11 +63,9 @@ export default function SwiperFeedback() {
     <div className="my-24 py-4">
       <Swiper
         breakpoints={{
-          // When screen width is >= 640px (small devices), show 2 slides
           640: {
             slidesPerView: 2,
           },
-          // When screen width is >= 1024px (large devices), show 3 slides
           1024: {
             slidesPerView: 3,
           },
@@ -78,7 +76,7 @@ export default function SwiperFeedback() {
         pagination={{
           clickable: true,
         }}
-        slidesPerView={1} // Default to one slide per view on small screens
+        slidesPerView={1} 
         spaceBetween={30}
       >
         {feedbackData.map((item) => (
