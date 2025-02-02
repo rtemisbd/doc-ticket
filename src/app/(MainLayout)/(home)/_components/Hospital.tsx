@@ -18,55 +18,60 @@ import { FreeMode, Pagination } from "swiper/modules";
 import { FaQuoteLeft } from "react-icons/fa";
 import Image from "next/image";
 
-import s1 from "@/assets/service/1.png"; 
-import s2 from "@/assets/service/2.png"; 
-import s3 from "@/assets/service/3.png"; 
-import s4 from "@/assets/service/4.png"; 
-import Container from "@/components/shared/Container";
+import s1 from "@/assets/clinic/1.png"; 
+import s2 from "@/assets/clinic/2.png"; 
+import s3 from "@/assets/clinic/3.png"; 
+import s4 from "@/assets/clinic/4.png"; 
+import s5 from "@/assets/clinic/5.png"; 
+import s6 from "@/assets/clinic/6.png"; 
 
-export default function Category() {
-    const beautyData = [
-        {
-          id: 1,
-          category: "Dental",
-          img: s1,
-        },
-        {
-          id: 2,
-          category: "Skin Care",
-          img: s2,
-        },
-        {
-          id: 3,
-          category: "Wellness",
-          img: s3,
-        },
-        {
-          id: 4,
-          category: "Hair Care",
-          img: s4,
-        },
-        {
-          id: 5,
-          category: "  Surgery",
-          img: s1,
-        },
-        {
-          id: 6,
-          category: "Laser  ",
-          img: s2,
-        },
-        {
-          id: 7,
-          category: "Body Spa",
-          img: s3,
-        },
-        {
-          id: 8,
-          category: "Aesthetic  ",
-          img: s4,
-        },
-      ];
+import Container from "@/components/shared/Container";
+ 
+
+export default function Hospital() {
+  const clinicData = [
+    {
+      id: 1,
+      clinicName: "Bright Smile Dental Clinic",
+      img: s1,
+    },
+    {
+      id: 2,
+      clinicName: "Glow Derma Care",
+      img: s2,
+    },
+    {
+      id: 3,
+      clinicName: "Harmony Wellness Center",
+      img: s3,
+    },
+    {
+      id: 4,
+      clinicName: "Lush Locks Hair Clinic",
+      img: s4,
+    },
+    {
+      id: 5,
+      clinicName: "Precision Surgical Center",
+      img: s5,
+    },
+    {
+      id: 6,
+      clinicName: "Elite Laser Clinic",
+      img: s6,
+    },
+    {
+      id: 7,
+      clinicName: "Serenity Spa & Wellness",
+      img: s3,
+    },
+    {
+      id: 8,
+      clinicName: "Radiance Aesthetic Studio",
+      img: s4,
+    },
+  ];
+  
 
   return (
     <div className=" py-4  ">
@@ -89,16 +94,16 @@ export default function Category() {
             clickable: true,
           }}
           slidesPerView={3} // Default to one slide per view on small screens
-          spaceBetween={30}
+          spaceBetween={20}
         >
-          {beautyData.map((item) => (
+          {clinicData.map((item) => (
           <SwiperSlide key={item.id}>
-          <div className="flex flex-col items-center justify-center py-2 w-full  text-center shadow-xl   rounded-lg   border my-8 ">
+          <div className="flex flex-col items-center justify-center py-2 w-full  text-center    my-8      ">
             {/* Image Section */}
             <div className="flex justify-center">
               <Image
                 alt="feedback"
-                className="h-20 w-20 rounded-md"
+                className="h-32 w-32 rounded-md"
                 height={100}
                 src={item.img}
                 width={100}
@@ -106,7 +111,9 @@ export default function Category() {
             </div>
         
             {/* Centered Text */}
-            <p className="font-medium pt-1 text-gray-600 text-center">{item.category}</p>
+
+            {/* <p className="font-medium pt-1 text-gray-600 text-center">{item.clinicName}</p> */}
+
           </div>
         </SwiperSlide>
         

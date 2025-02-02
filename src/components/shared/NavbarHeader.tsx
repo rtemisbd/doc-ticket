@@ -11,11 +11,11 @@ const NavbarHeader = () => {
   const [activeSection, setActiveSection] = useState("home");
 
   const navItems = [
-    { id: "home", name: "Home" },
-    { id: "doctor", name: "Doctor" },
-    { id: "services", name: "Services" },
-    { id: "review", name: "Review" },
-    { id: "contact", name: "Contact" },
+    { id: "home", name: "Home",path:'/' },
+    { id: "doctor", name: "Doctor",path:'/' },
+    { id: "services", name: "Services",path:'/' },
+    { id: "review", name: "Review",path:'/' },
+    { id: "contact", name: "Contact" ,path:'/'},
   ];
 
   const handleNavClick = (sectionId: any) => {
@@ -61,8 +61,9 @@ const NavbarHeader = () => {
           {/* Desktop Links */}
           <div className="hidden md:flex space-x-8 text-lg">
             {navItems.map((item) => (
-              <button
-                key={item.id}
+             <Link href={item?.path}  key={item.id}>
+               <button
+                 
                 onClick={() => handleNavClick(item.id)}
                 className={`hover:text-[#007E85] ${
                   activeSection === item.id ? "text-[#007E85]" : ""
@@ -70,6 +71,7 @@ const NavbarHeader = () => {
               >
                 {item.name}
               </button>
+             </Link>
             ))}
           </div>
 

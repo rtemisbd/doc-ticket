@@ -11,6 +11,8 @@
   "dependencies": {
     "@coreui/coreui": "^5.2.0",
     "@coreui/react": "^5.4.1",
+    "@heroui/accordion": "^2.2.8",
+    "@heroui/breadcrumbs": "^2.2.7",
     "@heroui/date-picker": "^2.3.10",
     "@heroui/modal": "^2.2.8",
     "@heroui/spinner": "^2.2.7",

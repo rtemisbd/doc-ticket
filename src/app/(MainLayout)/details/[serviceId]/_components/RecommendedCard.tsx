@@ -1,3 +1,6 @@
+ 
+
+
 "use client";
 
 import React from "react";
@@ -11,7 +14,7 @@ import Image from "next/image";
 import fd1 from "@/assets/card/card.png"; // Sample image (you can replace it with others)
 import Link from "next/link";
 
-export default function ServiceCard() {
+export default function RecommendedCard() {
   const cardData = [
     {
       id: 1,
@@ -104,7 +107,7 @@ export default function ServiceCard() {
             slidesPerView: 2,
           },
           1024: {
-            slidesPerView: 5,
+            slidesPerView: 3,
           },
         }}
         className="mySwiper "

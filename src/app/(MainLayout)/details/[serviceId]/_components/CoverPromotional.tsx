@@ -13,7 +13,7 @@ import caresoul3 from "@/assets/banner/4.png";
 import Image from "next/image";
 import { Swiper as SwiperType } from "swiper"; // Import Swiper type
 
-const Caresoul = () => {
+const CoverPromotional = () => {
   const swiperRef = useRef<SwiperType | null>(null); // Correctly type the ref
 
   const data=[
@@ -32,7 +32,7 @@ const Caresoul = () => {
   ]
 
   return (
-    <Container>
+ 
       <Swiper
         onSwiper={(swiper) => (swiperRef.current = swiper)} // Assign Swiper instance
         spaceBetween={30}
@@ -49,7 +49,7 @@ const Caresoul = () => {
           prevEl: ".swiper-button-prev",
         }}
         modules={[Autoplay, Pagination, Navigation]}
-        className="mySwiper mt-2"
+        className="mySwiper "
       >
         {data.map((item) => (
           <SwiperSlide
@@ -57,14 +57,15 @@ const Caresoul = () => {
             onMouseEnter={() => swiperRef.current?.autoplay.stop()} // Stop autoplay on hover
             onMouseLeave={() => swiperRef.current?.autoplay.start()} // Resume autoplay on mouse leave
           >
-            <div className="relative w-full h-[250px] md:h-[400px] p-2">
-              <Image src={item.img} alt={`Slide ${item.id}`} fill className="object-fill" />
+            <div className="relative w-full h-[150px] md:h-[200px] p-2 bg-sky-400">
+              {/* <Image src={item.img} alt={`Slide ${item.id}`} fill className="object-fill" /> */}
+              <h1 className="text-center pt-20 text-3xl">All Promotional Image Show in This Position</h1>
             </div>
           </SwiperSlide>
         ))}
       </Swiper>
-    </Container>
+    
   );
 };
 
-export default Caresoul;
+export default CoverPromotional;
