@@ -2,7 +2,7 @@ import Container from "@/components/shared/Container";
 import ServiceCard from "@/components/userUi/ServiceCard";
 import Link from "next/link";
 import React from "react";
-import { FaArrowRight } from "react-icons/fa";
+import { FaAngleRight, FaArrowRight } from "react-icons/fa";
 
 const Dental = () => {
   return (
@@ -10,11 +10,11 @@ const Dental = () => {
       <Container>
         <div className="flex items-center justify-between">
           <h1 className="text-black font-bold text-3xl ">Dental</h1>
-          <div className="flex items-center gap-2 ">
+          <div className="flex items-center gap-1 ">
             <Link href={"#"} className="text-[#1B90CB]">
               See More
             </Link>
-            <FaArrowRight className="text-[#1B90CB] " />
+            <FaAngleRight className="text-[#1B90CB] " />
           </div>
         </div>
         <div>

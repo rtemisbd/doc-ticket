@@ -16,12 +16,12 @@ import ServiceBanner from "./_components/ServiceBanner";
 
 const page = () => {
   return (
-    <div id="home">
+    <div  >
       <Caresoul />
       <Category />
-      <ClinicBanner/>
-<ClinicCategory/>
-<ServiceBanner/>
+      <ClinicBanner />
+      <ClinicCategory />
+      <ServiceBanner />
       <HealthBeauty />
 
       <Dental />

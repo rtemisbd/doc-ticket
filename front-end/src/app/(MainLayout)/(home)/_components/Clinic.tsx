@@ -3,7 +3,7 @@ import ClinicCard from "@/components/userUi/ClinicCard";
 import ServiceCard from "@/components/userUi/ServiceCard";
 import Link from "next/link";
 import React from "react";
-import { FaArrowRight } from "react-icons/fa";
+import { FaAngleRight, FaArrowRight } from "react-icons/fa";
 
 const Clinic = () => {
   return (
@@ -15,7 +15,7 @@ const Clinic = () => {
             <Link href={"#"} className="text-[#1B90CB]">
               See More
             </Link>
-            <FaArrowRight className="text-[#1B90CB] " />
+            <FaAngleRight className="text-[#1B90CB] " />
           </div>
         </div>
         <div>

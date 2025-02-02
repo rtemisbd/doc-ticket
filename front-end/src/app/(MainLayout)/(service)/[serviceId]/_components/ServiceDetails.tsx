@@ -5,7 +5,7 @@ import Container from "@/components/shared/Container";
 import Recommended from "./Recommended";
 import Title from "@/components/shared/Title";
 import BreadCombb from "./BreadCombb";
-import PromotionalCover from "./PromotionalCover";
+import PromotionalCover from "../../../../../components/shared/PromotionalCover";
 import { HospitalIcon, LocationIcon } from "@/assets/icon";
 import { FaStar } from "react-icons/fa";
 

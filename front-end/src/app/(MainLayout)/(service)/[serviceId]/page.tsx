@@ -7,12 +7,14 @@ interface IProps {
   };
 }
 
-const page = ({ params: { serviceId } }: IProps) => {
+const Page = async ({ params }: IProps) => {
+  const { serviceId } =await params;
+
   return (
     <div>
-      <ServiceDetails />
+      <ServiceDetails   />
     </div>
   );
 };
 
-export default page;
+export default Page;
