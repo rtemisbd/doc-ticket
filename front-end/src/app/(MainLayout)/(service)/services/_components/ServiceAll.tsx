@@ -24,7 +24,7 @@ const ServiceAll = () => {
             <div className="col-span-12 md:col-span-7 space-y-6">
               {/* card show   */}
 
-              <AllServiceCard />
+              <AllServiceCard cardNumber={9} />
             </div>
 
             {/* Right Side (5/12) - Fixed Card */}

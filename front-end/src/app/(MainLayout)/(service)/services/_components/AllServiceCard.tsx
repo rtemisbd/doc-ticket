@@ -4,7 +4,7 @@ import { LocationIcon } from "@/assets/icon";
 import Link from "next/link";
 import Image from "next/image";
 
-const AllServiceCard = () => {
+const AllServiceCard = ({cardNumber}:{cardNumber:number}) => {
   const cardData = [
     {
       id: 1,
@@ -92,7 +92,7 @@ const AllServiceCard = () => {
   return (
     <div className="">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-        {cardData.slice(0,9).map((item) => (
+        {cardData.slice(0,cardNumber).map((item) => (
           <div key={item?.id} className=" bg-white rounded-lg shadow-md mb-12          ">
             {/* Image */}
             <div className="relative w-full h-48">
