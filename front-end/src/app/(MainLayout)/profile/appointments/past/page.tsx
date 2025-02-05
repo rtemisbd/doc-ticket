@@ -3,6 +3,8 @@ import React from "react";
 import img from "@/assets/service/3.jpg";
 import { LocationIcon } from "@/assets/icon";
 import TitleProfile from "../../_components/TitleProfile";
+import ModelFeedback from "@/components/Modal/ModalFeedback";
+import Link from "next/link";
 
 const Page = () => {
   return (
@@ -47,13 +49,20 @@ const Page = () => {
 
                 {/* Buttons - Right Aligned on Medium & Large Screens */}
                 <div className="flex flex-col gap-2 mt-2 md:mt-0 md:w-auto">
-                  <button className="px-6 py-1 w-full md:w-44 bg-[#1AB79C] text-white text-sm font-medium rounded-md shadow-md focus:outline-none focus:ring-2 focus:ring-blue-300 capitalize">
+                  {/* <button className="px-6 py-1 w-full md:w-44 bg-[#1AB79C] text-white text-sm font-medium rounded-md shadow-md focus:outline-none focus:ring-2 focus:ring-blue-300 capitalize">
                    feedback
-                  </button>
-                 
-                  <button className="px-6 py-1 w-full md:w-44 bg-[#1AB79C] text-white text-sm font-medium rounded-md shadow-md focus:outline-none focus:ring-2 focus:ring-blue-300 capitalize">
-                    View Details
-                  </button>
+                  </button> */}
+                  <ModelFeedback
+                    buttonClass="px-6 py-1 w-full md:w-44 bg-[#1AB79C] text-white text-sm font-medium rounded-md shadow-md focus:outline-none focus:ring-2 focus:ring-blue-300 capitalize hover:bg-[#48ac99e3]"
+                    id="2"
+                  />
+
+                  <Link href={`/${index}`}>
+                    {" "}
+                    <button className="px-6 py-1 w-full md:w-44 bg-[#1AB79C] text-white text-sm font-medium rounded-md shadow-md focus:outline-none focus:ring-2 focus:ring-blue-300 capitalize hover:bg-[#48ac99e3]">
+                      View Details
+                    </button>
+                  </Link>
                 </div>
               </div>
             </div>

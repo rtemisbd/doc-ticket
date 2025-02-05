@@ -30,11 +30,11 @@ const Sidebar = () => {
 
   return (
     <div className=" ">
-      <div className="rounded-xl shadow-xl p-2">
+      <div className="rounded-xl shadow-xl p-2 bg-[#1AB79C]  ">
         <div className=" w-full  flex items-center justify-center flex-col">
  
          {/* upper part  */}
-          <div className="relative w-32 h-32    ">
+          <div className="relative w-32 h-32     ">
             <Image
               src={img}
               alt="profile"
@@ -53,7 +53,7 @@ const Sidebar = () => {
 
         
       </div>
-      <div className="mt-3 space-y-2 rounded-xl  shadow-xl py-8 px-4 text-xl">
+      <div className="mt-3 space-y-2 rounded-xl  shadow-xl py-8 px-4 text-xl   ">
         <SidebarOptions links={ userLinks} />
         {/* <SidebarOptions links={role === "USER" ? userLinks : adminLinks} /> */}
       </div>

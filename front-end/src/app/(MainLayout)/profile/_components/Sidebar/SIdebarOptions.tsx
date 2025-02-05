@@ -39,6 +39,7 @@ export const SidebarOptions = ({ links }: { links: LinkItem[] }) => {
               {/* Render the icon if it exists */}
            
               {link.label}
+          
             </Link>
           ) : (
             <button

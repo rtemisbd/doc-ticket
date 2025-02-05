@@ -3,6 +3,7 @@ import React from "react";
 import img from "@/assets/service/3.jpg";
 import { LocationIcon } from "@/assets/icon";
 import TitleProfile from "../../_components/TitleProfile";
+import Link from "next/link";
 
 const Page = () => {
   return (
@@ -53,9 +54,9 @@ const Page = () => {
                   <button className="px-6 py-1 w-full md:w-44 bg-[#1AB79C] text-white text-sm font-medium rounded-md shadow-md focus:outline-none focus:ring-2 focus:ring-blue-300">
                     Reschedule
                   </button>
-                  <button className="px-6 py-1 w-full md:w-44 bg-[#1AB79C] text-white text-sm font-medium rounded-md shadow-md focus:outline-none focus:ring-2 focus:ring-blue-300">
+ <Link href={`/${index}`}>                  <button className="px-6 py-1 w-full md:w-44 bg-[#1AB79C] text-white text-sm font-medium rounded-md shadow-md focus:outline-none focus:ring-2 focus:ring-blue-300">
                     View Details
-                  </button>
+                  </button></Link>
                 </div>
               </div>
             </div>
