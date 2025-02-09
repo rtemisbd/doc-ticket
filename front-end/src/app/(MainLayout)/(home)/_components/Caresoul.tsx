@@ -7,17 +7,24 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import Container from "@/components/shared/Container";
-import caresoul1 from "@/assets/caresoul/1.png";
 import Image from "next/image";
 import { Swiper as SwiperType } from "swiper"; // Import Swiper type
 
+// Import carousel images
+import caresoul1 from "@/assets/caresoul/1.png";
+import caresoul2 from "@/assets/caresoul/2.png";
+import caresoul3 from "@/assets/caresoul/3.png";
+import caresoul4 from "@/assets/caresoul/4.png";
+
+const carouselImages = [caresoul4,caresoul1, caresoul2, caresoul3,  ]; // Store images in an array
+
 const Caresoul = () => {
-  const swiperRef = useRef<SwiperType | null>(null); // Correctly type the ref
+  const swiperRef = useRef<SwiperType | null>(null);
 
   return (
     <Container>
       <Swiper
-        onSwiper={(swiper) => (swiperRef.current = swiper)} // Assign Swiper instance
+        onSwiper={(swiper) => (swiperRef.current = swiper)}
         spaceBetween={30}
         centeredSlides={true}
         autoplay={{
@@ -34,14 +41,14 @@ const Caresoul = () => {
         modules={[Autoplay, Pagination, Navigation]}
         className="mySwiper mt-2"
       >
-        {["Slide 1", "Slide 2", "Slide 3"].map((slide, index) => (
+        {carouselImages.map((image, index) => (
           <SwiperSlide
             key={index}
-            onMouseEnter={() => swiperRef.current?.autoplay.stop()} // Stop autoplay on hover
-            onMouseLeave={() => swiperRef.current?.autoplay.start()} // Resume autoplay on mouse leave
+            onMouseEnter={() => swiperRef.current?.autoplay.stop()}
+            onMouseLeave={() => swiperRef.current?.autoplay.start()}
           >
             <div className="relative w-full h-[250px] md:h-[400px] p-2">
-              <Image src={caresoul1} alt={slide} fill className="object-fill" />
+              <Image src={image} alt={`Slide ${index + 1}`} fill className="object-fill" />
             </div>
           </SwiperSlide>
         ))}

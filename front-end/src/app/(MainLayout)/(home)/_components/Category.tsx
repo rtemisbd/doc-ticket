@@ -68,7 +68,7 @@ export default function Category() {
       ];
 
   return (
-    <div className=" py-4">
+    <div className=" pt-4">
       <Container>
         <Swiper
           breakpoints={{

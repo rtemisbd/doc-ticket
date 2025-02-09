@@ -9,8 +9,9 @@ const layout = ({ children }: { children: ReactNode }) => {
       <div className="my-8 flex w-full gap-12 mx-auto ">
         <div className="w-2/5 hidden md:block">
           <Sidebar />
+    
         </div>
-        <div className="md:w-4/5  px-4 pt-2 shadow-lg">{children}</div>
+        <div className="w-full md:w-4/5  px-4 pt-2 shadow-lg">{children}</div>
       </div>
     </Container>
   );    

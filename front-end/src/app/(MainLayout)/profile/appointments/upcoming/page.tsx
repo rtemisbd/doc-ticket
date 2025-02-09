@@ -54,9 +54,12 @@ const Page = () => {
                   <button className="px-6 py-1 w-full md:w-44 bg-[#1AB79C] text-white text-sm font-medium rounded-md shadow-md focus:outline-none focus:ring-2 focus:ring-blue-300">
                     Reschedule
                   </button>
- <Link href={`/${index}`}>                  <button className="px-6 py-1 w-full md:w-44 bg-[#1AB79C] text-white text-sm font-medium rounded-md shadow-md focus:outline-none focus:ring-2 focus:ring-blue-300">
-                    View Details
-                  </button></Link>
+                  <Link href={`/${index}`}>
+                    {" "}
+                    <button className="px-6 py-1 w-full md:w-44 bg-[#1AB79C] text-white text-sm font-medium rounded-md shadow-md focus:outline-none focus:ring-2 focus:ring-blue-300">
+                      View Details
+                    </button>
+                  </Link>
                 </div>
               </div>
             </div>
